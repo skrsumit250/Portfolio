@@ -44,6 +44,4 @@ h3{
     padding: 0.5rem;
     font-family: 'Roboto Mono', monospace;
 }
-li:hover {
-    transform: scale(1.2);
-}
+
