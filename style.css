@@ -1,0 +1,88 @@
+hr{
+    background-color: #eee;
+    margin: 0 10vw 0 10vw;
+}
+header{
+    margin: 4vw 0 4vw 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #337ab7;
+}
+header p{
+    margin: 0;
+}
+nav{
+    margin: 2vw 0 0 0;
+}
+nav a{
+    margin: 1vw;
+}
+section{
+    margin: 2vw 10vw 2vw 10vw;
+}
+section p li{
+    margin: 0;
+}
+.inner{
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 30%;
+    margin: 2vw;
+}
+.logo img{
+    width: 20vw;
+}
+
+.Form-Content{
+    margin: 10% auto auto auto;
+    width: 70%;
+}
+.form-container {
+    max-width: 80%;
+    margin: 1vw auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+}
+input textarea{
+    padding: 2vw;
+    margin-bottom: 16px;
+    border: 1vw solid #ccc;
+    border-radius: 2vw;
+}
+
+input[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid white;
+}
+
+footer{
+    text-align: center;
+    margin: 3vw;
+}
+@media only screen and (max-width: 600px) {
+    section{
+        margin: 2vw 5vw 2vw 5vw;
+    }
+    .Form-Content{
+        width: 100%;
+        margin: 0;
+    }
+    .form-container{
+        max-width: 100%;
+        margin: 0;
+    }
+  }
