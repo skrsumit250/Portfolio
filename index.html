@@ -139,7 +139,7 @@
         <h3>Contact Me</h3>
         <div class="Form-Content">
             <div class="form-container">
-                <form action="#">
+                <form name="email_sub">
                     <label for="name">Name</label>
                     <input type="text" name="name" required>
     
@@ -150,7 +150,7 @@
                     <input type="text" name="contact">
     
                     <label for="name">Message</label>
-                    <textarea name="" id="" cols="30"></textarea>
+                    <textarea name="message" id="" cols="30"></textarea>
                     <br>
                     <input type="submit" name="" id="" value="Send">
                 </form>
@@ -158,5 +158,23 @@
         </div>
     </section>
     <footer><p>&#169; 2024 Sumit Kumar. All rights reserved</p></footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHZ7FlGStvT1AWR2y3y1ml4ixKYJ4KgQj1icnkOVm9-f7Pd3e3qxPNABJPOthRblAt/exec'
+        const form = document.forms['email_sub']
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(res => {
+                window.location.href = "index.html";
+                alert('Message Sent....')
+                // location.reload();
+          })
+            .catch(error => {
+              console.error('Error!', error.message);
+              alert('Error submission unsuccesfull');
+            })
+            .then( a => (form.reset()));
+        })
+    </script>
 </body>
 </html>
