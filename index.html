@@ -141,10 +141,10 @@
             <div class="form-container">
                 <form action="#">
                     <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
     
                     <label for="email">Email</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" required>
     
                     <label for="contact">Contact Number</label>
                     <input type="text" name="contact">
@@ -152,11 +152,16 @@
                     <label for="name">Message</label>
                     <textarea name="" id="" cols="30"></textarea>
                     <br>
-                    <input type="submit" name="" id="">
+                    <input type="submit" name="" id="" onclick="send()" value="Send">
                 </form>
             </div>
         </div>
     </section>
     <footer><p>&#169; 2024 Sumit Kumar. All rights reserved</p></footer>
+    <script>
+        function send(){
+            alert('Message Sent');
+        }
+    </script>
 </body>
 </html>
