@@ -55,7 +55,7 @@ form {
     flex-direction: column;
 }
 label {
-    margin-bottom: 8px;
+    margin-bottom: 8px 0 8px 0;
 }
 input textarea{
     padding: 2vw;
