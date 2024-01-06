@@ -4,15 +4,13 @@ This repository contains the source code for my personal portfolio website. The 
 
 ## Table of Contents
 1. Features
-2. Setup
-3. Usage
-4. Sections
-5. Education
-6. Skills
-7. Experience
-8. Projects
-9. Contact Me Form
-10. Google Apps Script Setup
+2. Sections
+3. Education
+4. Skills
+5. Experience
+6. Projects
+7. Contact Me Form
+8. Google Apps Script Setup
 
 
 ## Features
