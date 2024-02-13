@@ -155,7 +155,7 @@
         <h3>Contact Me</h3>
         <div class="Form-Content">
             <div class="form-container">
-                <form name="email_sub">
+                <form name="email_sub" method="post">
                     <label for="name">Name</label>
                     <input type="text" name="name" required>
     
@@ -168,29 +168,31 @@
                     <label for="name">Message</label>
                     <textarea name="message" id="" cols="30"></textarea>
                     <br>
-                    <input type="submit" name="" id="" value="Send">
+                    <input type="submit" name="" id="submit" value="Send">
                 </form>
             </div>
         </div>
-    </section>
+    </section>  
     <footer><p>&#169; 2024 Sumit Kumar. All rights reserved</p></footer>
     <script>
-        // const scriptURL = 'https://script.google.com/macros/s/AKfycbxBTKgMxAoSTvb7VfP_59LrTJXQs6p2xwlpUnjcpOB2F4RkJ4pvUpmFFVNJBxQ-6IJs/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBTKgMxAoSTvb7VfP_59LrTJXQs6p2xwlpUnjcpOB2F4RkJ4pvUpmFFVNJBxQ-6IJs/exec'
         const form = document.forms['email_sub']
         form.addEventListener('submit', e => {
-            alert('Currently Form is not working try another time of contact via Email :]');
-        //   e.preventDefault();
-        //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        //     .then(res => {
-        //         window.location.href = "index.html";
-        //         alert('Message Sent....')
-        //         // location.reload();
-        //   })
-            // .catch(error => {
-            //   console.error('Error!', error.message);
-            //   alert('Error submission unsuccesfull');
-            // })
-            // .then( a => (form.reset()));
+            var button=document.getElementById('submit');
+            button.style.backgroundColor="red";
+            button.style.border = "1px solid black";
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(res => {
+                // window.location.href = "index.html";
+                alert('Form Submitted')
+                location.reload();
+          })
+            .catch(error => {
+              console.error('Error!', error.message);
+              alert('Error : submission unsuccesfull \n Try again.....');
+            })
+            .then( a => (form.reset()));
         })
     </script>
 </body>
