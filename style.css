@@ -1,3 +1,12 @@
+body{
+    background-color: #131F23;
+    color: white;
+    form{
+        background-color: #131F23;
+        color: white;
+        box-shadow: 0 0 10px #fff;
+    }
+}
 hr{
     background-color: #eee;
     margin: 0 10vw 0 10vw;
@@ -40,13 +49,8 @@ section p,li{
 .logo img{
     width: 20vw;
 }
-
-.Form-Content{
-    margin: 10% auto auto auto;
-    width: 70%;
-}
-.form-container {
-    max-width: 80%;
+form {
+    max-width: 60%;
     margin: 1vw auto;
     background-color: #fff;
     padding: 20px;
@@ -83,11 +87,7 @@ footer{
     section{
         margin: 2vw 5vw 2vw 5vw;
     }
-    .Form-Content{
-        width: 100%;
-        margin: 0;
-    }
-    .form-container{
+    form{
         max-width: 100%;
         margin: 0;
     }
