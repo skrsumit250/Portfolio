@@ -17,6 +17,9 @@ hr{
 h3{
   text-decoration: overline;
 }
+h6{
+  text-decoration: underline;
+}
 header{
   margin: 4vw 0 4vw 0;
   text-align: center;
